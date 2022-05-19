@@ -16,13 +16,36 @@
     const character = document.querySelector('.character')
 
     document.onkeydown = (event) => {
+
       console.log(event.code)
-      if (event.code == "ArrowUp"){
-        character.classList.add('jump')
+      if (event.code == "ArrowLeft"){
+        character.classList.add('jumpb')
         setTimeout( () => {
-          character.classList.remove('jump')
-        }, 2000 )
+          character.classList.remove('jumpb')
+        }, 500 )
       }
+
+      if (event.code == "ArrowRight"){
+        character.classList.add('jumpr')
+        setTimeout( () => {
+          character.classList.remove('jumpr')
+        }, 500 )
+      }
+
+
+
+
+
+
+      if (event.code == "ArrowUp"){
+        character.classList.add('jumpu')
+        setTimeout( () => {
+          character.classList.remove('jumpu')
+        }, 500 )
+      }
+
+
+
     }
   </script>
 </body>

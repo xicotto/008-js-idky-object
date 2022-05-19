@@ -1,24 +1,55 @@
 .character{
-  width: 100px;
-  height: 100px;
+  width: 155px;
+  height: 200px;
   position:absolute;
   bottom: 20%;
   left: 10%;
-  background-image: url('mario.webp');
+  background-image: url('jumping.jpeg');
   background-size: cover;
 }
 
-.jump{
-  animation: jump 1000ms forwards;
+.jumpb{
+  animation: jumpb 500ms forwards;
 }
 
 
-@keyframes  jump {
+@keyframes  jumpb {
     50%{
       bottom: 60%;
+      /* background-image: url(Unknown.png); */
     }
     100%{
       bottom: 20%;
       transform: rotate(-360deg);
     }
 }
+
+@keyframes  jumpr {
+  50%{
+    bottom: 60%;
+  }
+  100%{
+    bottom: 20%;
+    transform: rotate(360deg);
+  }
+}
+
+.jumpr{
+  animation: jumpr 500ms forwards;
+}
+
+@keyframes  jumpu {
+  50%{
+    bottom: 60%;
+  }
+  100%{
+    bottom: 20%;
+    transform: rotate(0deg);
+  }
+}
+
+
+.jumpu{
+  animation: jumpu 500ms forwards;
+}
+
