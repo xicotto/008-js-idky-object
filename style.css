@@ -5,8 +5,36 @@
   bottom: 20%;
   left: 10%;
   background-image: url('jumping.jpeg');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
+.face-change{
+  background-image: url('face-2.png');
+  width: 200;
+  height: 2000;
+}
+
+
+
+jumpd{
+  animation: jumpd 500ms forwards;
+}
+
+@keyframes  jumpd {
+  50%{
+    bottom: 30%;
+    /* background-image: url(Unknown.png); */
+  }
+  100%{
+    bottom: 20%;
+    transform: rotate(45deg);
+  }
+}
+
+
+
+
 
 .jumpb{
   animation: jumpb 500ms forwards;
