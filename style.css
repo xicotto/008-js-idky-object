@@ -8,6 +8,14 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+.thick{
+  transform: scale(2,1); 
+}
+
+
+.invi{
+  opacity: 0.9;
+}
 
 .face-change{
   background-image: url('face-2.png');
@@ -17,7 +25,7 @@
 
 
 
-jumpd{
+.jumpd{
   animation: jumpd 500ms forwards;
 }
 
