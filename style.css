@@ -12,9 +12,24 @@
   transform: scale(2,1); 
 }
 
+.animation = drip
+
+
+
+
+.enemy{
+background-image: url(bean.jpeg);
+widows: 300px; ;
+height: 400px;
+position: absolute;
+top: 30%;
+left: 75%;
+background-size: cover;
+animation: drip 10s linear infinite;
+}
 
 .invi{
-  opacity: 0.9;
+  opacity: 0.10;
 }
 
 .face-change{
@@ -41,7 +56,28 @@
 }
 
 
+@keyframes drip {
 
+ 25%{ 
+   width: 300px;
+    
+  }
+  50%{
+    width: 300px
+    
+  }
+
+  75%{
+    width: 300px;
+    left: 30%
+    ;
+  }
+  100%{ width: 300px
+  ;
+  }
+
+
+}
 
 
 .jumpb{
